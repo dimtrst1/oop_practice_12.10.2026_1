@@ -37,9 +37,9 @@ int main()
     
     cout << "All students: " << endl;
     
-    for (Student& s : students)
+    for (auto ptr = students.begin(); ptr != students.end(); ptr++ )
     {
-        s.Show();
+        ptr->Show();
     }
     
     auto max = students.begin();
